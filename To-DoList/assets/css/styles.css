@@ -38,21 +38,35 @@ h1{
 #submit-button:hover{
     background-color: rgb(23, 55, 66);
     cursor: pointer;
+    color: rgb(255, 255, 255);
+
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+
+    font-weight: bold;
 }
 
 .remove-button
 {
     opacity: 0.35;
 
+    display: flex;
+    flex-grow: 1;
+
     cursor: pointer;
-    width: 25px;
+    min-width: 25px;
+    max-width: 25px;
+
+    text-align: center;
+    justify-content: center;
+
+
     margin-left: 5px;
     border: 2px solid rgb(66, 15, 26);
     border-radius: 5px;
     background-color: rgb(187, 41, 41);
     color: rgb(255, 255, 255);
     font-weight: bold;
-    text-align: center;
+    
     padding: 2px;
 }
 
@@ -60,6 +74,9 @@ h1{
     opacity: 1;
 }
 
+  #task-form{
+    text-align: center;
+  }
 
   input[type="text"] {
     padding: 5px;
@@ -73,12 +90,18 @@ h1{
     margin-top: 20px;
   }
   
+  .task-label{
+    display: flex;
+    flex-grow: 2;
+  }
+
   .task-item {
     display: flex;
     align-items: center;
+    width: auto;
     margin-bottom: 10px;
   }
-  
+
   :checked + label {
     text-decoration: line-through;
     color: grey;

@@ -21,6 +21,7 @@ function addTask(description) {
 	newTask.setAttribute('id', description);
 
 	taskLabel.setAttribute('for', description);
+	taskLabel.classList.add('task-label');
 	taskLabel.appendChild(taskDescriptionNode);
 
 	taskRemoveButton.setAttribute('name', description);
