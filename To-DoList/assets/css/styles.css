@@ -104,5 +104,5 @@ h1{
 
   :checked + label {
     text-decoration: line-through;
-    color: grey;
+    color: rgb(85, 85, 85);
   }
